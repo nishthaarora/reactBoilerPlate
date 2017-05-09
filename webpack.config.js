@@ -7,14 +7,14 @@ const config = {
     module: {
         loaders: [
             {
-                test: '/\.jsx?$/',
+                test: /\.jsx?$/,
                 loader: 'babel-loader',
-                exclude: [path.resolve(__dirname, './node_modules')],
-                include: [path.resolve(__dirname, './components/app.jsx')],
+                include: path.resolve(__dirname, 'components'),
+                exclude: path.resolve(__dirname,'node_modules'),
                 options: {presets: ["babel-preset-es2015", "babel-preset-react"]}
             }
         ]
-    },
+    }
         // devtool: "source-map"
 };
 

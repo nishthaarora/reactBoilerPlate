@@ -1,13 +1,8 @@
-console.log('hello world');
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 
-/*import React, {Component} from 'react';
-
-export default class HelloWorld extends React {
-    render() {
-        return (
-            <div>
-                {console.log('hello world')}
-            </div>
-        )
-    }
-}*/
+var App = document.getElementById('app');
+ReactDOM.render(
+  <h1>Hello, world!</h1>,
+  App
+);
