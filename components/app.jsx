@@ -1,8 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
+import Main from './components/Main.jsx';
 
-var App = document.getElementById('app');
+const App = document.getElementById('app');
+
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <BrowserRouter>
+    <Route path="/" component={Main}></Route>
+  </BrowserRouter>,
   App
 );
